@@ -120,6 +120,19 @@ nav a {
 .badge { display: inline; }
 .event-card { display: block; }
 
+/* responsive images */
+img { max-width: 100%; height: auto; }
+
+/* media query — small screens */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 4px 0;
+  }
+  body { font-size: 15px; }
+}
+
+
 
 
 
