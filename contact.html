@@ -20,42 +20,52 @@
     </nav>
   </header>
 
-  <main>
-    
-    <section id="contact-details" class="intro">
-      <h2>Contact Us</h2>
-      <address>
-        JNEC Events Office<br>
-        Jigme Namgyel Engineering College<br>
-        Dewathang, Samdrup Jongkhar, Bhutan
-      </address>
-      <p>Email: <a href="mailto:events@jnec.edu.bt">events@jnec.edu.bt</a></p>
-      <p>Phone: +975-77-123456</p>
-    </section>
+        <main>
+      <div class="container py-4">
 
-    <section id="contact-map">
-      <h2>Find Us</h2>
-      <iframe
-        src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88"
-        width="400" height="250" title="Campus map"></iframe>
-    </section>
-      <section id="enquiry" class="intro">
-      <h2>Send an Enquiry</h2>
-      <form action="#" method="post" id="enquiryForm">
-        <label for="ename">Name</label>
-        <input type="text" id="ename" name="name">
+        <section id="contact-details" class="intro mb-4">
+          <h2><i class="fa-solid fa-address-card"></i> Contact Us</h2>
+          <address>
+            JNEC Events Office<br>
+            Jigme Namgyel Engineering College<br>
+            Dewathang, Samdrup Jongkhar, Bhutan
+          </address>
+          <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:events@jnec.edu.bt">events@jnec.edu.bt</a></p>
+          <p><i class="fa-solid fa-phone"></i> Phone: +975-77-123456</p>
+        </section>
 
-        <label for="eemail">Email</label>
-        <input type="text" id="eemail" name="email">
+        <section id="contact-map" class="mb-4">
+          <h2>Find Us</h2>
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88"
+            width="400" height="250" title="Campus map" class="border rounded"></iframe>
+        </section>
 
-        <label for="emessage">Message</label>
-        <textarea id="emessage" name="message" rows="4" cols="40"></textarea>
+        <section id="enquiry" class="intro">
+          <h2>Send an Enquiry</h2>
+          <form action="#" method="post" id="enquiryForm">
+            <div class="mb-3">
+              <label for="ename" class="form-label">Name</label>
+              <input type="text" class="form-control" id="ename" name="name">
+            </div>
 
-        <button type="submit">Send Enquiry</button>
-        <button type="reset">Clear</button>
-      </form>
-    </section>
-  </main>
+            <div class="mb-3">
+              <label for="eemail" class="form-label">Email</label>
+              <input type="text" class="form-control" id="eemail" name="email">
+            </div>
+
+            <div class="mb-3">
+              <label for="emessage" class="form-label">Message</label>
+              <textarea class="form-control" id="emessage" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Enquiry</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
+          </form>
+        </section>
+
+      </div>
+      </main>
 
   <footer>
     <p>&copy; 2026 JNEC Events Hub</p>
