@@ -131,6 +131,35 @@ img { max-width: 100%; height: auto; }
   }
   body { font-size: 15px; }
 }
+/* Student Activity 8: original pseudo-class rule
+   Highlights whichever nav link the visitor is currently hovering,
+   giving clear visual feedback beyond the default link colour. */
+nav a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Student Activity 8: original attribute rule
+   Adds a small left border to any input marked required, so users
+   can spot mandatory fields at a glance without reading labels closely. */
+input[required] {
+  border-left: 3px solid #d97706;
+}
+/* Student Activity 8: original pseudo-class rule
+   Highlights any checked radio button or checkbox with a green outline,
+   giving clear visual confirmation of the user's selection. */
+input:checked {
+  outline: 2px solid #0f9d58;
+}
+
+/* Student Activity 8: original attribute rule
+   Enlarges checkbox inputs specifically, making them easier to tap
+   on touchscreens without affecting other input types. */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
 
 
 
