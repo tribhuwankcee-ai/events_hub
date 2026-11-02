@@ -132,7 +132,35 @@ img { max-width: 100%; height: auto; }
   body { font-size: 15px; }
 }
 
+/* ===== Practical IV: styles the scripts need ===== */
+.error { color: #b91c1c; font-size: 0.9rem; display: block; margin-top: 0.25rem; }
+.sold-out-card { opacity: 0.85; }
+.sold-out-card .card-title { text-decoration: line-through; }
+.seats-hint { font-size: 0.95rem; color: #0369a1; }
+
+#darkToggle { float: right; margin-top: 4px; }
+
+/* Register / Bootstrap button text stays readable (a:link would turn it blue) */
+a.btn-primary, a.btn-primary:link, a.btn-primary:visited,
+a.btn-primary:hover, a.btn-primary:active { color: #fff; }
+
+/* dark mode (toggled by js/main.js) */
+body.dark { background: #0f172a; color: #e2e8f0; }
+body.dark header,
+body.dark footer { background: #020617; }
+body.dark .card,
+body.dark .intro { background: #1e293b; color: #e2e8f0; border-color: #334155; }
+body.dark h1,
+body.dark h2 { color: #7dd3fc; }
+body.dark .form-control,
+body.dark .form-select { background: #1e293b; color: #e2e8f0; border-color: #334155; }
+body.dark .seats-hint { color: #7dd3fc; }
+body.dark .error { color: #fca5a5; }
 
 
 
 
+
+
+body.dark .text-muted { color: #94a3b8 !important; }
+body.dark .form-control::placeholder { color: #94a3b8; }
